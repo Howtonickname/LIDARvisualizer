@@ -10,7 +10,7 @@ def calculate_angle(x, y):
     return math.degrees(math.atan2(y, x))
 
 
-filenames = [os.path.basename(x) for x in glob.glob("*dane*.csv")]
+filenames = [os.path.basename(x) for x in glob.glob("*data*.csv")]
 for filename in filenames:
     padding, scale, point_size = 100, 2, 3
     data = pd.read_csv(filename)
